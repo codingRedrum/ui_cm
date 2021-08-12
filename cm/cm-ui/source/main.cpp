@@ -18,7 +18,7 @@ int main(int argc, char *argv[])
         if (!obj && url == objUrl)
             QCoreApplication::exit(-1);
     }, Qt::QueuedConnection);
-    engine.load(QUrl(QStringLiteral("qrc:/views/main.qml"))); // we asked to load main.qml , look for the file in qrc
+    engine.load(QUrl(QStringLiteral("qrc:/views/MasterView.qml"))); // we asked to load main.qml , look for the file in qrc
 // qrc files portable system, is a list of all resources collections files, files used for managing app, images, fonts, but mostly cruciallz for us QML
 
     return app.exec();
