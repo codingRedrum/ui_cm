@@ -8,6 +8,8 @@ INCLUDEPATH += source \
            ../cm-lib/source
 
 LIBS += -L$$PWD/Users/adrian/Desktop/projects/QT/ui_cm/build-cm-Desktop_Qt_5_15_1_clang_64bit-Debug/cm-lib -lcm-lib
+# LIBS dodajemy biblioteki -L directory -l denotes library file, using this syntax allows us to ignore file extensions (.a, .lib etc) and 
+# prefixes which can vary between operating systems 
 
 SOURCES += source/main.cpp # list of .cpp source files we want to include
 RESOURCES += views.qrc # qrc files portable system, is a list of all resources collections files, files used for managing app, images, fonts, but mostly cruciallz for us QML
